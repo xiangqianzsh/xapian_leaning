@@ -3,6 +3,7 @@
 #include <cstdio>
 #include <iomanip>
 #include <iostream>
+#include <memory>
 #include <string>
 
 #include "support.h"
@@ -40,7 +41,7 @@ search(const string & dbpath,
     // Open the database we're going to search.
     Xapian::Database db(dbpath);
 
-    Xapian::Query query("Sa1");
+    Xapian::Query query("Sa");
 
     // // test ok using Xapian::ValueWeightPostingSource
     // Xapian::ValueWeightPostingSource vps(score_slot);

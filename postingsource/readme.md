@@ -16,4 +16,4 @@ g++ search.cpp ExternalWeightPostingSource.cpp -o search -L/usr/local/xapian/lib
 - mac:
 g++ index.cpp -o index  support.cc -lxapian -std=c++14 
 
-g++ search.cpp -o search -lxapian -std=c++14
+g++ search.cpp ExternalWeightPostingSource.cpp  -o search -lxapian -std=c++14

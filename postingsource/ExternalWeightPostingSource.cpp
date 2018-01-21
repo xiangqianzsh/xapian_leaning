@@ -1,5 +1,5 @@
 #include <xapian.h>
-#include <ExternalWeightPostingSource.h>
+#include "ExternalWeightPostingSource.h"
 using namespace std;
 
 ExternalWeightPostingSource::ExternalWeightPostingSource(std::shared_ptr<WeightSource> wtsourcePtr_)
