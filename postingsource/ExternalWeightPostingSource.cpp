@@ -10,6 +10,7 @@ void ExternalWeightPostingSource::init(const Xapian::Database & db_) {
     termfreq = db_.get_doccount();
     started = false;
     check_docid = 0;
+    set_maxweight(100000.)
 }
 
 Xapian::doccount ExternalWeightPostingSource::get_termfreq_min() const {
