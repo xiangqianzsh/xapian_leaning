@@ -20,6 +20,7 @@ public:
         return 10000.;
     }
     double get_weight(Xapian::Document & doc) const {
+        // this function maybe very complex
         double weight = Xapian::sortable_unserialise(doc.get_value(1)) * scale;
         // std::cout << "weight: " << weight << std::endl;
         return weight;
