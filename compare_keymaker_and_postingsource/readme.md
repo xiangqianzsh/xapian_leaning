@@ -41,7 +41,7 @@ using KeyMaker
 ```
 
 # structure
-use `sh run.sh` to generate in your own computer and create index database.
+use `sh run_mac.sh` to generate in your own computer and create index database.
 ```
 .
 ├── data   # generate data
@@ -60,7 +60,7 @@ use `sh run.sh` to generate in your own computer and create index database.
 │   ├── support.cc
 │   └── support.h
 ├── readme.md
-├── run.sh   # main scripts
+├── run_mac.sh   # main scripts
 ├── search_use_keymaker
 │   ├── search
 │   └── search.cpp
