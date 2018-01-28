@@ -1,7 +1,19 @@
 # introduction
 This is a demo for testing the performance of PostingSource and KeyMaker.
 
-I generate 30 million documents, all documents contain term of t1, 1/2 of the documents contain term of t2, 1/3 of the documents contain term of t3, ..., 1/20 of the documents contain term of t20. For simple, let the score of each document equals to the docid of the documents.
+I generate 30 million documents, all documents contain term of t1, 1/2 of the documents contain term of t2, 1/3 of the documents contain term of t3, ..., 1/20 of the documents contain term of t20. For simple, let the score of each document equals to the docid of the documents. The data looks like this
+```
+id,content,score
+1,t1,1
+2,t1 t2,2
+3,t1 t3,3
+4,t1 t2 t4,4
+5,t1 t5,5
+6,t1 t2 t3 t6,6
+7,t1 t7,7
+8,t1 t2 t4 t8,8
+9,t1 t3 t9,9
+```
 
 While searching, we first use one term (for example t1) to choose some documents, and then sort them descending using 0.5 * doc.get_value(1), i.e 0.5 * the score of the documents.
 
