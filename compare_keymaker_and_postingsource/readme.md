@@ -1,7 +1,7 @@
 # introduction
-This is a demo for testing the performance of PostingSource and KeyMaker.
+This is a demo for testing the performance of PostingSource and KeyMaker. In our real data, the score of the documents is not ascending by docid.
 
-I generate 30 million documents, all documents contain term of t1, 1/2 of the documents contain term of t2, 1/3 of the documents contain term of t3, ..., 1/20 of the documents contain term of t20. For simple, let the score of each document equals to the docid of the documents. The data looks like this
+We generate 30 million documents, all documents contain term of t1, 1/2 of the documents contain term of t2, 1/3 of the documents contain term of t3, ..., 1/20 of the documents contain term of t20. For simple, let the score of each document equals to the docid of the documents. The data looks like this
 ```
 id,content,score
 1,t1,1
@@ -17,7 +17,25 @@ id,content,score
 
 While searching, we first use one term (for example t1) to choose some documents, and then sort them descending using 0.5 * doc.get_value(1), i.e 0.5 * score.
 
-I was testing on my own mac book, the performance difference is very large.
+When we use KeyMaker, we just overide the operator() method. 
+```c++
+class MyKeyMaker : public Xapian::KeyMaker {
+    std::string operator() (const Xapian::Document &doc) const {
+        return Xapian::sortable_serialise(0.5 * Xapian::sortable_unserialise(doc.get_value(1)));
+    }
+};
+```
+
+When we use PostingSoure, our get_weight() funtion looks like this
+```c++
+double ExternalWeightPostingSource::get_weight() const {
+    Xapian::Document doc = this->db.get_document(get_docid());
+    return 0.5 * Xapian::sortable_unserialise(doc.get_value(1));
+}
+```
+
+
+I have tested this on my own mac book, the performance difference is very large.
 ```
 for term t1:
 using PostingSource:
