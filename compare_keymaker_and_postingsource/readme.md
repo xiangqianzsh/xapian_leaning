@@ -15,7 +15,7 @@ id,content,score
 9,t1 t3 t9,9
 ```
 
-While searching, we first use one term (for example t1) to choose some documents, and then sort them descending using 0.5 * doc.get_value(1), i.e 0.5 * the score of the documents.
+While searching, we first use one term (for example t1) to choose some documents, and then sort them descending using 0.5 * doc.get_value(1), i.e 0.5 * score.
 
 I was testing on my own mac book, the performance difference is very large.
 ```
