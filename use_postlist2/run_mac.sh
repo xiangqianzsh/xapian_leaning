@@ -8,6 +8,7 @@ INDEX_DIR=${DIR}/index
 # step1, gen data
 echo "[step1] [`date`] Generating data ..."
 cd ${DATA_DIR}
+# python gen_test_data.py 30000000  > ${DATA_PATH} # python2, sys.argv[1] means the number of documents
 python gen_test_data.py 3000  > ${DATA_PATH} # python2, sys.argv[1] means the number of documents
 
 # step2, create index database
