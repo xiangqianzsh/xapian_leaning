@@ -16,7 +16,7 @@ While index, we set t1 to t20 as booleam term, add set int(10000 * x1) to the 1s
 
 While searching, we first use one term (for example t1) to choose some documents, and then sort them descending using `0.5 * doc.get_value(1)) + 0.7 * doc.get_value(2)) + 0.2 * doc.get_value(3)) + 0.4 * doc.get_value(4)) + 0.9 * doc.get_value(5))`, i.e. `10000 * (0.5 * x1 + 0.7 * x2 + 0.2 * x3 + 0.4 * x4 + 0.9 * x5)`.
 
-We compare the preformance of four methods: search_use_weight, search_use_keymaker, search_use_keymaker_inmmeory and search_use_keymaker_inmmeory_use_double.
+We compare the preformance of four methods: search_use_weight, search_use_keymaker, search_use_keymaker_inmmeory and search_use_keymaker_inmmeory_use_double. See file `performance_test.xlsx`.
 
 # 结论
 1. 测试的性能不是太稳定, 可能是与计算机做的一些cache有关.
@@ -30,59 +30,55 @@ We compare the preformance of four methods: search_use_weight, search_use_keymak
 或是倒排索引能记录局部最大值信息, 可以设计基于局部最大值的剪枝策略.
 
 
-
 # structure
 use `sh run_mac.sh` to generate in your own computer and create index database.
 ```
 .
-├── data   # generate data
+├── bash_test.sh
+├── data  # generate data
 │   ├── data.csv
 │   └── gen_test_data.py
-├── db    # database
+├── db
 │   ├── docdata.glass
 │   ├── flintlock
 │   ├── iamglass
 │   ├── position.glass
 │   ├── postlist.glass
 │   └── termlist.glass
-├── index   # index
+├── index
 │   ├── index
 │   ├── index.cpp
 │   ├── support.cc
 │   └── support.h
+├── performance_test.xlsx
 ├── readme.md
 ├── run_mac.sh   # main scripts
 ├── search_use_keymaker
-│   ├── search
 │   └── search.cpp
-└── search_use_postingsource
-    ├── ExternalWeightPostingSource.cpp
-    ├── ExternalWeightPostingSource.h
-    ├── search
-    └── search.cpp
-
+├── search_use_keymaker_inmmeory
+│   └── search.cpp
+├── search_use_keymaker_inmmeory_use_double
+│   └── search.cpp
+└── search_use_weight
+    ├── ProfileWeight.cpp
+    ├── ProfileWeight.h
+    └── search.cpp
 ```
 
-# test ValuePostingSource
-Add Python PostingSource example from Xappy to docs
-https://trac.xapian.org/ticket/503
-
 # complile
-- linux:
 
-g++ index.cpp -o index  support.cc -L/usr/local/xapian/lib `pkg-config --cflags --libs xapian-core` --std=c++14
+- linux:
+g++ index.cpp -o index support.cc -L/usr/local/xapian/lib pkg-config --cflags --libs xapian-core --std=c++14
 
 ./index
 
-g++ search.cpp ExternalWeightPostingSource.cpp -o search -L/usr/local/xapian/lib `pkg-config --cflags --libs xapian-core` --std=c++14
+g++ search.cpp ExternalWeightPostingSource.cpp -o search -L/usr/local/xapian/lib pkg-config --cflags --libs xapian-core --std=c++14
 
 ./search
 
-
 - mac:
+g++ index.cpp -o index support.cc -lxapian -std=c++14
 
-g++ index.cpp -o index  support.cc -lxapian -std=c++14 
-
-g++ search.cpp ExternalWeightPostingSource.cpp  -o search -lxapian -std=c++14
+g++ search.cpp ExternalWeightPostingSource.cpp -o search -lxapian -std=c++14
 
 g++ search.cpp -o search -lxapian -std=c++14
