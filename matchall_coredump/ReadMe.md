@@ -19,7 +19,7 @@ In thread 10
 Segmentation fault (core dumped)
 ```
 
-Error information looks like this When using gdb to detect the core file. 
+Error information looks like this when using gdb to detect the core file. 
 ```
 #0  0x00007efe6f57de1b in ~intrusive_ptr (this=<optimized out>, __in_chrg=<optimized out>) at ./include/xapian/intrusive_ptr.h:112
 112         if( px != 0 && --px->_refs == 0 ) delete px;
