@@ -1,0 +1,999 @@
+_ 1109 xapian-core 1.4.5: debug log started
+A 1109 [0x7ffee05883a8] Database::Database("./index_data", 0)
+D 1109  [0x7fb14b001358] GlassTable::GlassTable("postlist", "./index_data/postlist.", true, false)
+D 1109  [0x7fb14b001358] GlassTable::GlassTable("postlist", "./index_data/postlist.", true, false) returned
+D 1109  [0x7fb14b001508] GlassTable::GlassTable("position", "./index_data/position.", true, true)
+D 1109  [0x7fb14b001508] GlassTable::GlassTable("position", "./index_data/position.", true, true) returned
+D 1109  [0x7fb14b0016b0] GlassTable::GlassTable("termlist", "./index_data/termlist.", true, true)
+D 1109  [0x7fb14b0016b0] GlassTable::GlassTable("termlist", "./index_data/termlist.", true, true) returned
+D 1109  [0x7fb14b0018e0] GlassTable::GlassTable("synonym", "./index_data/synonym.", true, true)
+D 1109  [0x7fb14b0018e0] GlassTable::GlassTable("synonym", "./index_data/synonym.", true, true) returned
+D 1109  [0x7fb14b001ab8] GlassTable::GlassTable("spelling", "./index_data/spelling.", true, true)
+D 1109  [0x7fb14b001ab8] GlassTable::GlassTable("spelling", "./index_data/spelling.", true, true) returned
+D 1109  [0x7fb14b001c98] GlassTable::GlassTable("docdata", "./index_data/docdata.", true, true)
+D 1109  [0x7fb14b001c98] GlassTable::GlassTable("docdata", "./index_data/docdata.", true, true) returned
+D 1109  [0x7fb14b001000] GlassDatabase::GlassDatabase("./index_data", -1, 0)
+D 1109   [0x7fb14b001000] bool GlassDatabase::open_tables(-1)
+D 1109    [0x7fb14b001030] void GlassVersion::read(0)
+D 1109    [0x7fb14b001030] void GlassVersion::read(0) returned
+D 1109    [0x7fb14b001c98] void GlassTable::open(-1, Glass::RootInfo, 12)
+D 1109     [0x7fb14b001c98] void GlassTable::close(false)
+D 1109     [0x7fb14b001c98] void GlassTable::close(false) returned
+D 1109     [0x7fb14b001c98] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12)
+D 1109      [0x7fb14b001c98] void GlassTable::basic_open(&Glass::RootInfo, 12)
+D 1109       [0x7fb14b001c98] void GlassTable::read_root(0)
+D 1109        [0x7fb14b001c98] void GlassTable::block_to_cursor(0x7fb14b001d58, 0, 2)
+D 1109         [0x7fb14b001c98] void GlassTable::read_block(2, 0x7fb14b004008)
+D 1109         [0x7fb14b001c98] void GlassTable::read_block(2, 0x7fb14b004008) returned
+D 1109        [0x7fb14b001c98] void GlassTable::block_to_cursor(0x7fb14b001d58, 0, 2) returned
+D 1109       [0x7fb14b001c98] void GlassTable::read_root(0) returned
+D 1109      [0x7fb14b001c98] void GlassTable::basic_open(&Glass::RootInfo, 12) returned
+D 1109      [0x7fb14b001c98] void GlassTable::read_root(0)
+D 1109       [0x7fb14b001c98] void GlassTable::block_to_cursor(0x7fb14b001d58, 0, 2)
+D 1109       [0x7fb14b001c98] void GlassTable::block_to_cursor(0x7fb14b001d58, 0, 2) returned
+D 1109      [0x7fb14b001c98] void GlassTable::read_root(0) returned
+D 1109     [0x7fb14b001c98] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12) returned (not marked up for return logging)
+D 1109    [0x7fb14b001c98] void GlassTable::open(-1, Glass::RootInfo, 12) returned
+D 1109    [0x7fb14b001ab8] void GlassTable::open(-1, Glass::RootInfo, 12)
+D 1109     [0x7fb14b001ab8] void GlassTable::close(false)
+D 1109     [0x7fb14b001ab8] void GlassTable::close(false) returned
+D 1109     [0x7fb14b001ab8] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12)
+D 1109     [0x7fb14b001ab8] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12) returned (not marked up for return logging)
+D 1109    [0x7fb14b001ab8] void GlassTable::open(-1, Glass::RootInfo, 12) returned
+D 1109    [0x7fb14b0018e0] void GlassTable::open(-1, Glass::RootInfo, 12)
+D 1109     [0x7fb14b0018e0] void GlassTable::close(false)
+D 1109     [0x7fb14b0018e0] void GlassTable::close(false) returned
+D 1109     [0x7fb14b0018e0] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12)
+D 1109     [0x7fb14b0018e0] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12) returned (not marked up for return logging)
+D 1109    [0x7fb14b0018e0] void GlassTable::open(-1, Glass::RootInfo, 12) returned
+D 1109    [0x7fb14b0016b0] void GlassTable::open(-1, Glass::RootInfo, 12)
+D 1109     [0x7fb14b0016b0] void GlassTable::close(false)
+D 1109     [0x7fb14b0016b0] void GlassTable::close(false) returned
+D 1109     [0x7fb14b0016b0] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12)
+D 1109      [0x7fb14b0016b0] void GlassTable::basic_open(&Glass::RootInfo, 12)
+D 1109       [0x7fb14b0016b0] void GlassTable::read_root(0)
+D 1109        [0x7fb14b0016b0] void GlassTable::block_to_cursor(0x7fb14b001770, 0, 2)
+D 1109         [0x7fb14b0016b0] void GlassTable::read_block(2, 0x7fb14b802008)
+D 1109         [0x7fb14b0016b0] void GlassTable::read_block(2, 0x7fb14b802008) returned
+D 1109        [0x7fb14b0016b0] void GlassTable::block_to_cursor(0x7fb14b001770, 0, 2) returned
+D 1109       [0x7fb14b0016b0] void GlassTable::read_root(0) returned
+D 1109      [0x7fb14b0016b0] void GlassTable::basic_open(&Glass::RootInfo, 12) returned
+D 1109      [0x7fb14b0016b0] void GlassTable::read_root(0)
+D 1109       [0x7fb14b0016b0] void GlassTable::block_to_cursor(0x7fb14b001770, 0, 2)
+D 1109       [0x7fb14b0016b0] void GlassTable::block_to_cursor(0x7fb14b001770, 0, 2) returned
+D 1109      [0x7fb14b0016b0] void GlassTable::read_root(0) returned
+D 1109     [0x7fb14b0016b0] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12) returned (not marked up for return logging)
+D 1109    [0x7fb14b0016b0] void GlassTable::open(-1, Glass::RootInfo, 12) returned
+D 1109    [0x7fb14b001508] void GlassTable::open(-1, Glass::RootInfo, 12)
+D 1109     [0x7fb14b001508] void GlassTable::close(false)
+D 1109     [0x7fb14b001508] void GlassTable::close(false) returned
+D 1109     [0x7fb14b001508] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12)
+D 1109      [0x7fb14b001508] void GlassTable::basic_open(&Glass::RootInfo, 12)
+D 1109       [0x7fb14b001508] void GlassTable::read_root(0)
+D 1109        [0x7fb14b001508] void GlassTable::block_to_cursor(0x7fb14b0015c8, 0, 2)
+D 1109         [0x7fb14b001508] void GlassTable::read_block(2, 0x7fb14b806208)
+D 1109         [0x7fb14b001508] void GlassTable::read_block(2, 0x7fb14b806208) returned
+D 1109        [0x7fb14b001508] void GlassTable::block_to_cursor(0x7fb14b0015c8, 0, 2) returned
+D 1109       [0x7fb14b001508] void GlassTable::read_root(0) returned
+D 1109      [0x7fb14b001508] void GlassTable::basic_open(&Glass::RootInfo, 12) returned
+D 1109      [0x7fb14b001508] void GlassTable::read_root(0)
+D 1109       [0x7fb14b001508] void GlassTable::block_to_cursor(0x7fb14b0015c8, 0, 2)
+D 1109       [0x7fb14b001508] void GlassTable::block_to_cursor(0x7fb14b0015c8, 0, 2) returned
+D 1109      [0x7fb14b001508] void GlassTable::read_root(0) returned
+D 1109     [0x7fb14b001508] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12) returned (not marked up for return logging)
+D 1109    [0x7fb14b001508] void GlassTable::open(-1, Glass::RootInfo, 12) returned
+D 1109    [0x7fb14b001358] void GlassTable::open(-1, Glass::RootInfo, 12)
+D 1109     [0x7fb14b001358] void GlassTable::close(false)
+D 1109     [0x7fb14b001358] void GlassTable::close(false) returned
+D 1109     [0x7fb14b001358] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12)
+D 1109      [0x7fb14b001358] void GlassTable::basic_open(&Glass::RootInfo, 12)
+D 1109       [0x7fb14b001358] void GlassTable::read_root(0)
+D 1109        [0x7fb14b001358] void GlassTable::block_to_cursor(0x7fb14b001418, 0, 2)
+D 1109         [0x7fb14b001358] void GlassTable::read_block(2, 0x7fb14b80a408)
+D 1109         [0x7fb14b001358] void GlassTable::read_block(2, 0x7fb14b80a408) returned
+D 1109        [0x7fb14b001358] void GlassTable::block_to_cursor(0x7fb14b001418, 0, 2) returned
+D 1109       [0x7fb14b001358] void GlassTable::read_root(0) returned
+D 1109      [0x7fb14b001358] void GlassTable::basic_open(&Glass::RootInfo, 12) returned
+D 1109      [0x7fb14b001358] void GlassTable::read_root(0)
+D 1109       [0x7fb14b001358] void GlassTable::block_to_cursor(0x7fb14b001418, 0, 2)
+D 1109       [0x7fb14b001358] void GlassTable::block_to_cursor(0x7fb14b001418, 0, 2) returned
+D 1109      [0x7fb14b001358] void GlassTable::read_root(0) returned
+D 1109     [0x7fb14b001358] bool GlassTable::do_open_to_read(&Glass::RootInfo, 12) returned (not marked up for return logging)
+D 1109    [0x7fb14b001358] void GlassTable::open(-1, Glass::RootInfo, 12) returned
+D 1109   [0x7fb14b001000] bool GlassDatabase::open_tables(-1) returned (not marked up for return logging)
+D 1109  [0x7fb14b001000] GlassDatabase::GlassDatabase("./index_data", -1, 0) returned
+A 1109 [0x7ffee05883a8] Database::Database("./index_data", 0) returned
+A 1109 [0x7fb14ac02738] Database::Database(Database())
+A 1109 [0x7fb14ac02738] Database::Database(Database()) returned
+A 1109 [0x7ffee0588388] Enquire::Enquire(Database())
+A 1109 [0x7ffee0588388] Enquire::Enquire(Database()) returned
+A 1109 [0x7ffee0588388] void Xapian::Enquire::set_weighting_scheme(Xapian::Weight)
+A 1109 [0x7ffee0588388] void Xapian::Enquire::set_weighting_scheme(Xapian::Weight) returned
+A 1109 [0x7ffee0587f10] Query::Query("questions", 1, 0)
+A 1109 [0x7ffee0587f10] Query::Query("questions", 1, 0) returned
+A 1109 [0x7ffee0587f10] Query::Query("about", 1, 0)
+A 1109 [0x7ffee0587f10] Query::Query("about", 1, 0) returned
+A 1109 [0x7ffee0587f10] Query::Query("using", 1, 0)
+A 1109 [0x7ffee0587f10] Query::Query("using", 1, 0) returned
+A 1109 [0x7ffee0587f10] Query::Query("Wikipedia", 1, 0)
+A 1109 [0x7ffee0587f10] Query::Query("Wikipedia", 1, 0) returned
+A 1109 [0x7ffee0587f10] Query::Query("discussions", 1, 0)
+A 1109 [0x7ffee0587f10] Query::Query("discussions", 1, 0) returned
+A 1109 [0x7ffee0587f10] Query::Query("virtual", 1, 0)
+A 1109 [0x7ffee0587f10] Query::Query("virtual", 1, 0) returned
+A 1109 [0x7ffee0588388] void Xapian::Enquire::set_query(Query(((questions OR about OR using OR Wikipedia) AND_NOT (discussions OR virtual))), 0)
+A 1109 [0x7ffee0588388] void Xapian::Enquire::set_query(Query(((questions OR about OR using OR Wikipedia) AND_NOT (discussions OR virtual))), 0) returned
+A 1109 [0x7ffee0588388] Xapian::MSet Xapian::Enquire::get_mset(0, 10, 0, NULL, NULL)
+M 1109  [0x7fb14ac02730] MSet Enquire::Internal::get_mset(0, 10, 0, NULL, NULL)
+A 1109   [0x7fb14ac02738] Xapian::doccount Database::get_doccount(0)
+D 1109    [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109    [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+A 1109   [0x7fb14ac02738] Xapian::doccount Database::get_doccount(0) returned: 12
+A 1109   [0x7fb14ac02a88] Database::Database(0)
+A 1109   [0x7fb14ac02a88] Database::Database(0) returned
+A 1109   [0x7ffee0587be8] Database::Database(Database())
+A 1109   [0x7ffee0587be8] Database::Database(Database()) returned
+M 1109   [0x7ffee0587bd0] MultiMatch::MultiMatch(Database(), Query(((questions OR about OR using OR Wikipedia) AND_NOT (discussions OR virtual))), 6, NULL, 0, 4294967295, 0, 0, 1, 4294967295, 0, true, 0, Weight::Internal(totlen=0, collection_size=0, rset_size=0, total_term_count=0, subdbs=0, finalised=0, termfreqs={}), (Xapian:Weight*)0x7fb14c000000, std::vector(0), false, false)
+M 1109    [0x0] void split_rset_by_db(NULL, 1, std::vector(0))
+M 1109    [0x0] void split_rset_by_db(NULL, 1, std::vector(0)) returned
+M 1109    [0x7fb14c2000b0] LocalSubMatch::LocalSubMatch((Database::Internal*)0x7fb14b001000, Query(((questions OR about OR using OR Wikipedia) AND_NOT (discussions OR virtual))), 6, RSet(RSet::Internal()), (Xapian:Weight*)0x7fb14c000000)
+M 1109    [0x7fb14c2000b0] LocalSubMatch::LocalSubMatch((Database::Internal*)0x7fb14b001000, Query(((questions OR about OR using OR Wikipedia) AND_NOT (discussions OR virtual))), 6, RSet(RSet::Internal()), (Xapian:Weight*)0x7fb14c000000) returned
+A 1109    [0x7ffee0587888] TermIterator::TermIterator(0x7fb14ac02d20)
+A 1109    [0x7ffee0587888] TermIterator::TermIterator(0x7fb14ac02d20) returned
+A 1109    [0x7ffee05878a0] TermIterator & TermIterator::operator=(TermIterator())
+A 1109    [0x7ffee05878a0] TermIterator & TermIterator::operator=(TermIterator()) returned: TermIterator()
+A 1109    [0x7ffee05878a0] string TermIterator::operator*(0)
+A 1109    [0x7ffee05878a0] string TermIterator::operator*(0) returned: std::string&
+D 1109    [0x7fb14b001358] bool GlassTable::readahead_key("Wikipedia")
+D 1109    [0x7fb14b001358] bool GlassTable::readahead_key("Wikipedia") returned: false
+M 1109    [0x0] void prepare_sub_matches(std::vector(1), Weight::Internal(totlen=0, collection_size=0, rset_size=0, total_term_count=0, subdbs=0, finalised=0, termfreqs={}))
+M 1109     [0x7fb14c2000b0] bool LocalSubMatch::prepare_match(true, Weight::Internal(totlen=0, collection_size=0, rset_size=0, total_term_count=0, subdbs=0, finalised=0, termfreqs={}))
+D 1109      [0x7fb14b001000] Xapian::totallength GlassDatabase::get_total_length(0)
+D 1109      [0x7fb14b001000] Xapian::totallength GlassDatabase::get_total_length(0) returned: 156
+D 1109      [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109      [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+D 1109      [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109      [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+D 1109      [0x7fb14b001000] Xapian::totallength GlassDatabase::get_total_length(0)
+D 1109      [0x7fb14b001000] Xapian::totallength GlassDatabase::get_total_length(0) returned: 156
+A 1109      [0x7ffee05876c0] TermIterator::TermIterator(0x7fb14ac03180)
+A 1109      [0x7ffee05876c0] TermIterator::TermIterator(0x7fb14ac03180) returned
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator=(TermIterator())
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator=(TermIterator()) returned: TermIterator()
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0)
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0) returned: std::string&
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("Wikipedia", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674)
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("Wikipedia", "")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("Wikipedia")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("Wikipedia") returned
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&) returned: 13
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: false
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("Wikipedia", "") returned: false
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("Wikipedia", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674) returned
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0)
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0) returned: TermIterator()
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0)
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0) returned: std::string&
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("about", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674)
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("about", "")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("about")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("about") returned
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 13, bool&)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 13, bool&) returned: 17
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("about", "") returned: true
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("about", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674) returned
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0)
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0) returned: TermIterator()
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0)
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0) returned: std::string&
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("discussions", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674)
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("discussions", "")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("discussions")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("discussions") returned
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 17, bool&)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 17, bool&) returned: 45
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("discussions", "") returned: true
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("discussions", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674) returned
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0)
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0) returned: TermIterator()
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0)
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0) returned: std::string&
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("questions", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674)
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("questions", "")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("questions")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("questions") returned
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 45, bool&)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 45, bool&) returned: 89
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("questions", "") returned: true
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("questions", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674) returned
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0)
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0) returned: TermIterator()
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0)
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0) returned: std::string&
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("using", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674)
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("using", "")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("using")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("using") returned
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 89, bool&)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 89, bool&) returned: 117
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("using", "") returned: true
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("using", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674) returned
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0)
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0) returned: TermIterator()
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0)
+A 1109      [0x7ffee05876b8] string TermIterator::operator*(0) returned: std::string&
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("virtual", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674)
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("virtual", "")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("virtual")
+D 1109        [0x7fb14b001358] void GlassTable::form_key("virtual") returned
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 117, bool&)
+D 1109         [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 117, bool&) returned: 121
+D 1109        [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109        [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109       [0x7fb14b001358] bool GlassTable::get_exact_entry("virtual", "") returned: true
+D 1109      [0x7fb14b001000] void GlassDatabase::get_freqs("virtual", (Xapian::termcount*)0x7ffee0587670, (Xapian::termcount*)0x7ffee0587674) returned
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0)
+A 1109      [0x7ffee05876b8] TermIterator & TermIterator::operator++(0) returned: TermIterator()
+M 1109     [0x7fb14c2000b0] bool LocalSubMatch::prepare_match(true, Weight::Internal(totlen=0, collection_size=0, rset_size=0, total_term_count=0, subdbs=0, finalised=0, termfreqs={})) returned: true
+M 1109    [0x0] void prepare_sub_matches(std::vector(1), Weight::Internal(totlen=0, collection_size=0, rset_size=0, total_term_count=0, subdbs=0, finalised=0, termfreqs={})) returned
+A 1109    [0x7fb14ac02a88] void Database::operator=(Database())
+A 1109    [0x7fb14ac02a88] void Database::operator=(Database()) returned
+M 1109   [0x7ffee0587bd0] MultiMatch::MultiMatch(Database(), Query(((questions OR about OR using OR Wikipedia) AND_NOT (discussions OR virtual))), 6, NULL, 0, 4294967295, 0, 0, 1, 4294967295, 0, true, 0, Weight::Internal(totlen=0, collection_size=0, rset_size=0, total_term_count=0, subdbs=0, finalised=0, termfreqs={}), (Xapian:Weight*)0x7fb14c000000, std::vector(0), false, false) returned
+M 1109   [0x7ffee0587bd0] void MultiMatch::get_mset(0, 10, 10, mset, Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), mdecider, sorter)
+M 1109    [0x7fb14c2000b0] void LocalSubMatch::start_match(0, 10, 10, Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}))
+M 1109    [0x7fb14c2000b0] void LocalSubMatch::start_match(0, 10, 10, Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)})) returned
+M 1109    [0x7fb14c2000b0] PostList * LocalSubMatch::get_postlist(0x7ffee0587bd0, (Xapian::termcount*)0x7ffee05878c4)
+A 1109     [0x7ffee0587be8] bool Database::has_positions(0)
+A 1109     [0x7ffee0587be8] bool Database::has_positions(0) returned: true
+D 1109     [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109     [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+Y 1109     [0x7fb14ac02910] PostingIterator::Internal * QueryAndNot::postlist(0x7ffee05874b8, 1)
+Y 1109      [0x7fb14c100000] PostingIterator::Internal * QueryOr::postlist(0x7ffee05874b8, 1)
+M 1109       [0x7fb14c100000] void QueryBranch::do_or_like(Xapian::Internal::OrContext, 0x7ffee05874b8, 1, 0)
+Y 1109        [0x7fb14c100050] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 1)
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("questions", 1, 1, false, 0x7ffee05874b8, false)
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("questions", (Xapian::termcount*)0x7ffee0586c70, (Xapian::termcount*)0x0)
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("questions", "")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("questions")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("questions") returned
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 121, bool&)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 121, bool&) returned: 89
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("questions", "") returned: true
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("questions", (Xapian::termcount*)0x7ffee0586c70, (Xapian::termcount*)0x0) returned
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+D 1109          [0x7fb14b001000] LeafPostList * GlassDatabase::open_post_list("questions")
+D 1109           [0x7fb14b001358] GlassCursor * GlassTable::cursor_get(0)
+D 1109           [0x7fb14b001358] GlassCursor * GlassTable::cursor_get(0) returned: 0x7fb14ae002f0
+D 1109           [0x7fb14ae00420] GlassPostList::GlassPostList(&GlassDatabase, "questions", true)
+D 1109            [0x7fb14ae002f0] bool GlassCursor::find_entry("questions")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("questions")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("questions") returned
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14ae00528)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&) returned: 89
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14ae00528) returned: true
+D 1109             Found entry: key=\x71\x75\x65\x73\x74\x69\x6f\x6e\x73
+D 1109            [0x7fb14ae002f0] bool GlassCursor::find_entry("questions") returned: true
+D 1109            [0x7fb14ae002f0] bool GlassCursor::read_tag(false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0)
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0) returned: true
+D 1109             tag=\x04\x04\x01\x31\x08\x01\x01\x01\x03\x01\x01\x01
+D 1109            [0x7fb14ae002f0] bool GlassCursor::read_tag(false) returned: false
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14ae004f8, (void*)0x7fb14ae0033d, 0x7fb14ae00510, 0x0)
+D 1109             *number_of_entries_ptr = 4
+D 1109             did = 2
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14ae004f8, (void*)0x7fb14ae0033d, 0x7fb14ae00510, 0x0) returned: 2
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14ae004f8, (void*)0x7fb14ae0033d, 2, (void*)0x7fb14ae004e1)
+D 1109             *is_last_chunk_ptr = 1
+D 1109             last_did_in_chunk = 10
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14ae004f8, (void*)0x7fb14ae0033d, 2, (void*)0x7fb14ae004e1) returned: 10
+D 1109            Initial docid 2
+D 1109           [0x7fb14ae00420] GlassPostList::GlassPostList(&GlassDatabase, "questions", true) returned
+D 1109          [0x7fb14b001000] LeafPostList * GlassDatabase::open_post_list("questions") returned: 0x7fb14ae00420
+M 1109          [0x7fb14ad00040] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6, "questions", 1, 1)
+M 1109          [0x7fb14ad00040] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6, "questions", 1, 1) returned
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("questions", 1, 1, false, 0x7ffee05874b8, false) returned: 0x7fb14ae00420
+Y 1109        [0x7fb14c100050] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 1) returned: 0x7fb14ae00420
+Y 1109        [0x7fb14ac02700] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 1)
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("about", 1, 1, false, 0x7ffee05874b8, false)
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("about", (Xapian::termcount*)0x7ffee0586c70, (Xapian::termcount*)0x0)
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("about", "")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("about")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("about") returned
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 89, bool&)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 89, bool&) returned: 17
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("about", "") returned: true
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("about", (Xapian::termcount*)0x7ffee0586c70, (Xapian::termcount*)0x0) returned
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+D 1109          [0x7fb14ae00420] LeafPostList * GlassPostList::open_nearby_postlist("about")
+D 1109           [0x7fb14af00490] GlassPostList::GlassPostList(&GlassDatabase, "about", 0x7fb14af00430)
+D 1109            [0x7fb14af00430] bool GlassCursor::find_entry("about")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("about")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("about") returned
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14af000b8)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&) returned: 17
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14af000b8) returned: true
+D 1109             Found entry: key=\x61\x62\x6f\x75\x74
+D 1109            [0x7fb14af00430] bool GlassCursor::find_entry("about") returned: true
+D 1109            [0x7fb14af00430] bool GlassCursor::read_tag(false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0)
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0) returned: true
+D 1109             tag=\x04\x04\x01\x31\x0a\x01\x03\x01\x01\x01\x03\x01
+D 1109            [0x7fb14af00430] bool GlassCursor::read_tag(false) returned: false
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14af00568, (void*)0x7fb14af0047d, 0x7fb14af00580, 0x0)
+D 1109             *number_of_entries_ptr = 4
+D 1109             did = 2
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14af00568, (void*)0x7fb14af0047d, 0x7fb14af00580, 0x0) returned: 2
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14af00568, (void*)0x7fb14af0047d, 2, (void*)0x7fb14af00551)
+D 1109             *is_last_chunk_ptr = 1
+D 1109             last_did_in_chunk = 12
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14af00568, (void*)0x7fb14af0047d, 2, (void*)0x7fb14af00551) returned: 12
+D 1109            Initial docid 2
+D 1109           [0x7fb14af00490] GlassPostList::GlassPostList(&GlassDatabase, "about", 0x7fb14af00430) returned
+D 1109          [0x7fb14ae00420] LeafPostList * GlassPostList::open_nearby_postlist("about") returned: 0x7fb14af00490
+M 1109          [0x7fb14af003f0] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6, "about", 1, 1)
+M 1109          [0x7fb14af003f0] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6, "about", 1, 1) returned
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("about", 1, 1, false, 0x7ffee05874b8, false) returned: 0x7fb14af00490
+Y 1109        [0x7fb14ac02700] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 1) returned: 0x7fb14af00490
+Y 1109        [0x7fb14ac02850] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 1)
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("using", 1, 1, false, 0x7ffee05874b8, false)
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("using", (Xapian::termcount*)0x7ffee0586c70, (Xapian::termcount*)0x0)
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("using", "")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("using")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("using") returned
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 17, bool&)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 17, bool&) returned: 117
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("using", "") returned: true
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("using", (Xapian::termcount*)0x7ffee0586c70, (Xapian::termcount*)0x0) returned
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+D 1109          [0x7fb14af00490] LeafPostList * GlassPostList::open_nearby_postlist("using")
+D 1109           [0x7fb14af00660] GlassPostList::GlassPostList(&GlassDatabase, "using", 0x7fb14af00600)
+D 1109            [0x7fb14af00600] bool GlassCursor::find_entry("using")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("using")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("using") returned
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14af00368)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&) returned: 117
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14af00368) returned: true
+D 1109             Found entry: key=\x75\x73\x69\x6e\x67
+D 1109            [0x7fb14af00600] bool GlassCursor::find_entry("using") returned: true
+D 1109            [0x7fb14af00600] bool GlassCursor::read_tag(false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0)
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0) returned: true
+D 1109             tag=\x02\x02\x01\x31\x06\x01\x05\x01
+D 1109            [0x7fb14af00600] bool GlassCursor::read_tag(false) returned: false
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14af00738, (void*)0x7fb14af00649, 0x7fb14af00750, 0x0)
+D 1109             *number_of_entries_ptr = 2
+D 1109             did = 2
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14af00738, (void*)0x7fb14af00649, 0x7fb14af00750, 0x0) returned: 2
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14af00738, (void*)0x7fb14af00649, 2, (void*)0x7fb14af00721)
+D 1109             *is_last_chunk_ptr = 1
+D 1109             last_did_in_chunk = 8
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14af00738, (void*)0x7fb14af00649, 2, (void*)0x7fb14af00721) returned: 8
+D 1109            Initial docid 2
+D 1109           [0x7fb14af00660] GlassPostList::GlassPostList(&GlassDatabase, "using", 0x7fb14af00600) returned
+D 1109          [0x7fb14af00490] LeafPostList * GlassPostList::open_nearby_postlist("using") returned: 0x7fb14af00660
+M 1109          [0x7fb14af005c0] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6, "using", 1, 1)
+M 1109          [0x7fb14af005c0] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6, "using", 1, 1) returned
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("using", 1, 1, false, 0x7ffee05874b8, false) returned: 0x7fb14af00660
+Y 1109        [0x7fb14ac02850] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 1) returned: 0x7fb14af00660
+Y 1109        [0x7fb14ac027f0] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 1)
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("Wikipedia", 1, 1, false, 0x7ffee05874b8, false)
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("Wikipedia", (Xapian::termcount*)0x7ffee0586c70, (Xapian::termcount*)0x0)
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("Wikipedia", "")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("Wikipedia")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("Wikipedia") returned
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 117, bool&)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 117, bool&) returned: 13
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: false
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("Wikipedia", "") returned: false
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("Wikipedia", (Xapian::termcount*)0x7ffee0586c70, (Xapian::termcount*)0x0) returned
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+D 1109          [0x7fb14af00660] LeafPostList * GlassPostList::open_nearby_postlist("Wikipedia")
+D 1109           [0x7fb14af00830] GlassPostList::GlassPostList(&GlassDatabase, "Wikipedia", 0x7fb14af007d0)
+D 1109            [0x7fb14af007d0] bool GlassCursor::find_entry("Wikipedia")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("Wikipedia")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("Wikipedia") returned
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14af00598)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&) returned: 13
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14af00598) returned: false
+D 1109             Found entry: key=\x00\xe0
+D 1109            [0x7fb14af007d0] bool GlassCursor::find_entry("Wikipedia") returned: false
+D 1109            postlist for term not found
+D 1109           [0x7fb14af00830] GlassPostList::GlassPostList(&GlassDatabase, "Wikipedia", 0x7fb14af007d0) returned
+D 1109          [0x7fb14af00660] LeafPostList * GlassPostList::open_nearby_postlist("Wikipedia") returned: 0x7fb14af00830
+M 1109          [0x7fb14ad00080] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6, "Wikipedia", 1, 1)
+M 1109          [0x7fb14ad00080] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6, "Wikipedia", 1, 1) returned
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("Wikipedia", 1, 1, false, 0x7ffee05874b8, false) returned: 0x7fb14af00830
+Y 1109        [0x7fb14ac027f0] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 1) returned: 0x7fb14af00830
+M 1109       [0x7fb14c100000] void QueryBranch::do_or_like(Xapian::Internal::OrContext, 0x7ffee05874b8, 1, 0) returned
+M 1109       [0x7fb14ad000c0] OrPostList::OrPostList(0x7fb14af00660, 0x7fb14af00830, 0x7ffee0587bd0, 12)
+M 1109       [0x7fb14ad000c0] OrPostList::OrPostList(0x7fb14af00660, 0x7fb14af00830, 0x7ffee0587bd0, 12) returned
+M 1109       [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109       [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 2
+M 1109       [0x7fb14c1001b0] OrPostList::OrPostList(0x7fb14ae00420, 0x7fb14ad000c0, 0x7ffee0587bd0, 12)
+M 1109        [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109        [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 2
+M 1109       [0x7fb14c1001b0] OrPostList::OrPostList(0x7fb14ae00420, 0x7fb14ad000c0, 0x7ffee0587bd0, 12) returned
+M 1109       [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109        [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109        [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 2
+M 1109       [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 5
+M 1109       [0x7fb14c1000f0] OrPostList::OrPostList(0x7fb14c1001b0, 0x7fb14af00490, 0x7ffee0587bd0, 12)
+M 1109        [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109         [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109         [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 2
+M 1109        [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 5
+M 1109       [0x7fb14c1000f0] OrPostList::OrPostList(0x7fb14c1001b0, 0x7fb14af00490, 0x7ffee0587bd0, 12) returned
+Y 1109      [0x7fb14c100000] PostingIterator::Internal * QueryOr::postlist(0x7ffee05874b8, 1) returned: 0x7fb14c1000f0
+M 1109      [0x7fb14ac02910] void QueryBranch::do_or_like(Xapian::Internal::OrContext, 0x7ffee05874b8, 0, 0)
+M 1109       [0x7fb14ac02880] void QueryBranch::do_or_like(Xapian::Internal::OrContext, 0x7ffee05874b8, 0, 0)
+Y 1109        [0x7fb14ac028b0] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 0)
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("discussions", 1, 0, false, 0x7ffee05874b8, false)
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("discussions", (Xapian::termcount*)0x7ffee0586c80, (Xapian::termcount*)0x0)
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("discussions", "")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("discussions")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("discussions") returned
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 13, bool&)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 13, bool&) returned: 45
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("discussions", "") returned: true
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("discussions", (Xapian::termcount*)0x7ffee0586c80, (Xapian::termcount*)0x0) returned
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+D 1109          [0x7fb14af00830] LeafPostList * GlassPostList::open_nearby_postlist("discussions")
+D 1109           [0x7fb14c100550] GlassPostList::GlassPostList(&GlassDatabase, "discussions", 0x7fb14c1004f0)
+D 1109            [0x7fb14c1004f0] bool GlassCursor::find_entry("discussions")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("discussions")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("discussions") returned
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14c100098)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&) returned: 45
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14c100098) returned: true
+D 1109             Found entry: key=\x64\x69\x73\x63\x75\x73\x73\x69\x6f\x6e\x73
+D 1109            [0x7fb14c1004f0] bool GlassCursor::find_entry("discussions") returned: true
+D 1109            [0x7fb14c1004f0] bool GlassCursor::read_tag(false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0)
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0) returned: true
+D 1109             tag=\x02\x02\x05\x31\x06\x01\x05\x01
+D 1109            [0x7fb14c1004f0] bool GlassCursor::read_tag(false) returned: false
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14c100628, (void*)0x7fb14c100539, 0x7fb14c100640, 0x0)
+D 1109             *number_of_entries_ptr = 2
+D 1109             did = 6
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14c100628, (void*)0x7fb14c100539, 0x7fb14c100640, 0x0) returned: 6
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14c100628, (void*)0x7fb14c100539, 6, (void*)0x7fb14c100611)
+D 1109             *is_last_chunk_ptr = 1
+D 1109             last_did_in_chunk = 12
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14c100628, (void*)0x7fb14c100539, 6, (void*)0x7fb14c100611) returned: 12
+D 1109            Initial docid 6
+D 1109           [0x7fb14c100550] GlassPostList::GlassPostList(&GlassDatabase, "discussions", 0x7fb14c1004f0) returned
+D 1109          [0x7fb14af00830] LeafPostList * GlassPostList::open_nearby_postlist("discussions") returned: 0x7fb14c100550
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("discussions", 1, 0, false, 0x7ffee05874b8, false) returned: 0x7fb14c100550
+Y 1109        [0x7fb14ac028b0] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 0) returned: 0x7fb14c100550
+Y 1109        [0x7fb14ac028e0] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 0)
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("virtual", 1, 0, false, 0x7ffee05874b8, false)
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("virtual", (Xapian::termcount*)0x7ffee0586c80, (Xapian::termcount*)0x0)
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("virtual", "")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("virtual")
+D 1109            [0x7fb14b001358] void GlassTable::form_key("virtual") returned
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 45, bool&)
+D 1109             [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 45, bool&) returned: 121
+D 1109            [0x7fb14b001358] bool GlassTable::find(0x7fb14b001418) returned: true
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109            [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109           [0x7fb14b001358] bool GlassTable::get_exact_entry("virtual", "") returned: true
+D 1109          [0x7fb14b001000] void GlassDatabase::get_freqs("virtual", (Xapian::termcount*)0x7ffee0586c80, (Xapian::termcount*)0x0) returned
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0)
+D 1109          [0x7fb14b001000] Xapian::doccount GlassDatabase::get_doccount(0) returned: 12
+D 1109          [0x7fb14c100550] LeafPostList * GlassPostList::open_nearby_postlist("virtual")
+D 1109           [0x7fb14c100650] GlassPostList::GlassPostList(&GlassDatabase, "virtual", 0x7fb14c100390)
+D 1109            [0x7fb14c100390] bool GlassCursor::find_entry("virtual")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("virtual")
+D 1109             [0x7fb14b001358] void GlassTable::form_key("virtual") returned
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14c1003f8)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&)
+D 1109              [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&) returned: 121
+D 1109             [0x7fb14b001358] bool GlassTable::find(0x7fb14c1003f8) returned: true
+D 1109             Found entry: key=\x76\x69\x72\x74\x75\x61\x6c
+D 1109            [0x7fb14c100390] bool GlassCursor::find_entry("virtual") returned: true
+D 1109            [0x7fb14c100390] bool GlassCursor::read_tag(false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109             [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0)
+D 1109             [0x7fb14b001358] bool GlassTable::next_default(C_, 0) returned: true
+D 1109             tag=\x02\x02\x03\x31\x06\x01\x05\x01
+D 1109            [0x7fb14c100390] bool GlassCursor::read_tag(false) returned: false
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14c100728, (void*)0x7fb14c1003d9, 0x7fb14c100740, 0x0)
+D 1109             *number_of_entries_ptr = 2
+D 1109             did = 4
+D 1109            [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14c100728, (void*)0x7fb14c1003d9, 0x7fb14c100740, 0x0) returned: 4
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14c100728, (void*)0x7fb14c1003d9, 4, (void*)0x7fb14c100711)
+D 1109             *is_last_chunk_ptr = 1
+D 1109             last_did_in_chunk = 10
+D 1109            [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14c100728, (void*)0x7fb14c1003d9, 4, (void*)0x7fb14c100711) returned: 10
+D 1109            Initial docid 4
+D 1109           [0x7fb14c100650] GlassPostList::GlassPostList(&GlassDatabase, "virtual", 0x7fb14c100390) returned
+D 1109          [0x7fb14c100550] LeafPostList * GlassPostList::open_nearby_postlist("virtual") returned: 0x7fb14c100650
+M 1109         [0x7fb14c2000b0] LeafPostList * LocalSubMatch::open_post_list("virtual", 1, 0, false, 0x7ffee05874b8, false) returned: 0x7fb14c100650
+Y 1109        [0x7fb14ac028e0] PostingIterator::Internal * QueryTerm::postlist(0x7ffee05874b8, 0) returned: 0x7fb14c100650
+M 1109       [0x7fb14ac02880] void QueryBranch::do_or_like(Xapian::Internal::OrContext, 0x7ffee05874b8, 0, 0) returned
+M 1109      [0x7fb14ac02910] void QueryBranch::do_or_like(Xapian::Internal::OrContext, 0x7ffee05874b8, 0, 0) returned
+M 1109      [0x7fb14ae00350] OrPostList::OrPostList(0x7fb14c100550, 0x7fb14c100650, 0x7ffee0587bd0, 12)
+M 1109      [0x7fb14ae00350] OrPostList::OrPostList(0x7fb14c100550, 0x7fb14c100650, 0x7ffee0587bd0, 12) returned
+M 1109      [0x7fb14ae003e0] AndNotPostList::AndNotPostList(0x7fb14c1000f0, 0x7fb14ae00350, 0x7ffee0587bd0, 12)
+M 1109      [0x7fb14ae003e0] AndNotPostList::AndNotPostList(0x7fb14c1000f0, 0x7fb14ae00350, 0x7ffee0587bd0, 12) returned
+Y 1109     [0x7fb14ac02910] PostingIterator::Internal * QueryAndNot::postlist(0x7ffee05874b8, 1) returned: 0x7fb14ae003e0
+M 1109     [0x7fb14af00240] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6)
+M 1109     [0x7fb14af00240] void Weight::init_(Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), 6) returned
+M 1109    [0x7fb14c2000b0] PostList * LocalSubMatch::get_postlist(0x7ffee0587bd0, (Xapian::termcount*)0x7ffee05878c4) returned: 0x7fb14ae003e0
+A 1109    [0x7ffee0587728] Database::Database(Database())
+A 1109    [0x7ffee0587728] Database::Database(Database()) returned
+M 1109    pl = ((((questions:4 Or (using:2 Or Wikipedia:0)) Or about:4) AndNot (discussions:2 Or virtual:2)))
+M 1109    [0x7fb14ae003e0] double AndNotPostList::recalc_maxweight(0)
+M 1109     [0x7fb14c1000f0] double OrPostList::recalc_maxweight(0)
+M 1109      [0x7fb14c1001b0] double OrPostList::recalc_maxweight(0)
+M 1109       [0x7fb14ad000c0] double OrPostList::recalc_maxweight(0)
+M 1109        [0x7fb14ad000c0] double OrPostList::get_maxweight(0)
+M 1109        [0x7fb14ad000c0] double OrPostList::get_maxweight(0) returned: 0
+M 1109       [0x7fb14ad000c0] double OrPostList::recalc_maxweight(0) returned: 0
+M 1109       [0x7fb14c1001b0] double OrPostList::get_maxweight(0)
+M 1109       [0x7fb14c1001b0] double OrPostList::get_maxweight(0) returned: 0
+M 1109      [0x7fb14c1001b0] double OrPostList::recalc_maxweight(0) returned: 0
+M 1109      [0x7fb14c1000f0] double OrPostList::get_maxweight(0)
+M 1109      [0x7fb14c1000f0] double OrPostList::get_maxweight(0) returned: 0
+M 1109     [0x7fb14c1000f0] double OrPostList::recalc_maxweight(0) returned: 0
+M 1109    [0x7fb14ae003e0] double AndNotPostList::recalc_maxweight(0) returned: 0
+M 1109    pl = ((((questions:4 Or (using:2 Or Wikipedia:0)) Or about:4) AndNot (discussions:2 Or virtual:2)))
+M 1109    [0x7fb14ae003e0] Xapian::doccount AndNotPostList::get_termfreq_max(0)
+M 1109     [0x7fb14c1000f0] Xapian::doccount OrPostList::get_termfreq_max(0)
+M 1109      [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_max(0)
+M 1109       [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_max(0)
+M 1109       [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_max(0) returned: 2
+M 1109      [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_max(0) returned: 6
+M 1109     [0x7fb14c1000f0] Xapian::doccount OrPostList::get_termfreq_max(0) returned: 10
+M 1109    [0x7fb14ae003e0] Xapian::doccount AndNotPostList::get_termfreq_max(0) returned: 10
+M 1109    [0x7fb14ae003e0] Xapian::doccount AndNotPostList::get_termfreq_est(0)
+M 1109     [0x7fb14c1000f0] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109      [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109       [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109       [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 2
+M 1109      [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 5
+M 1109     [0x7fb14c1000f0] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 7
+M 1109     [0x7fb14ae00350] Xapian::doccount OrPostList::get_termfreq_est(0)
+M 1109     [0x7fb14ae00350] Xapian::doccount OrPostList::get_termfreq_est(0) returned: 4
+M 1109    [0x7fb14ae003e0] Xapian::doccount AndNotPostList::get_termfreq_est(0) returned: 5
+M 1109    [0x7fb14ae003e0] Xapian::doccount AndNotPostList::get_termfreq_min(0)
+M 1109     [0x7fb14c1000f0] Xapian::doccount OrPostList::get_termfreq_min(0)
+M 1109      [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_min(0)
+M 1109       [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_min(0)
+M 1109       [0x7fb14ad000c0] Xapian::doccount OrPostList::get_termfreq_min(0) returned: 2
+M 1109      [0x7fb14c1001b0] Xapian::doccount OrPostList::get_termfreq_min(0) returned: 4
+M 1109     [0x7fb14c1000f0] Xapian::doccount OrPostList::get_termfreq_min(0) returned: 4
+M 1109     [0x7fb14ae00350] Xapian::doccount OrPostList::get_termfreq_max(0)
+M 1109     [0x7fb14ae00350] Xapian::doccount OrPostList::get_termfreq_max(0) returned: 4
+M 1109    [0x7fb14ae003e0] Xapian::doccount AndNotPostList::get_termfreq_min(0) returned: 0
+M 1109    [0x7fb14ae003e0] PostList * AndNotPostList::next(0)
+M 1109     [0x7fb14c1000f0] PostList * OrPostList::next(0)
+M 1109      [0x7fb14c1001b0] PostList * OrPostList::next(0)
+D 1109       [0x7fb14ae00420] PostList * GlassPostList::next(0)
+D 1109        Moved to docid 2, wdf = 1
+D 1109       [0x7fb14ae00420] PostList * GlassPostList::next(0) returned: 0x0
+M 1109       [0x7fb14ad000c0] PostList * OrPostList::next(0)
+D 1109        [0x7fb14af00660] PostList * GlassPostList::next(0)
+D 1109         Moved to docid 2, wdf = 1
+D 1109        [0x7fb14af00660] PostList * GlassPostList::next(0) returned: 0x0
+D 1109        [0x7fb14af00830] PostList * GlassPostList::next(0)
+D 1109         Moved to end
+D 1109        [0x7fb14af00830] PostList * GlassPostList::next(0) returned: 0x0
+M 1109       [0x7fb14ad000c0] PostList * OrPostList::next(0) returned: 0x7fb14af00660
+D 1109       [0x7fb14af00830] GlassPostList::~GlassPostList()
+D 1109       [0x7fb14af00830] GlassPostList::~GlassPostList() returned
+M 1109      [0x7fb14c1001b0] PostList * OrPostList::next(0) returned: 0x0
+M 1109      [0x7fb14c1001b0] bool OrPostList::at_end(0)
+M 1109      [0x7fb14c1001b0] bool OrPostList::at_end(0) returned: false
+D 1109      [0x7fb14af00490] PostList * GlassPostList::next(0)
+D 1109       Moved to docid 2, wdf = 1
+D 1109      [0x7fb14af00490] PostList * GlassPostList::next(0) returned: 0x0
+M 1109      [0x7fb14c1001b0] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14c1001b0] Xapian::docid OrPostList::get_docid(0) returned: 2
+M 1109     [0x7fb14c1000f0] PostList * OrPostList::next(0) returned: 0x0
+M 1109     [0x7fb14ae003e0] PostList * AndNotPostList::advance_to_next_match(0, 0x0)
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0)
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0)
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0) returned: 2
+M 1109      [0x7fb14ae00350] PostList * OrPostList::skip_to(2, 0)
+D 1109       [0x7fb14c100550] PostList * GlassPostList::skip_to(2, 0)
+D 1109       [0x7fb14c100550] PostList * GlassPostList::skip_to(2, 0) returned: 0x0
+D 1109       [0x7fb14c100650] PostList * GlassPostList::skip_to(2, 0)
+D 1109       [0x7fb14c100650] PostList * GlassPostList::skip_to(2, 0) returned: 0x0
+M 1109      [0x7fb14ae00350] PostList * OrPostList::skip_to(2, 0) returned: 0x0
+M 1109      [0x7fb14ae00350] bool OrPostList::at_end(0)
+M 1109      [0x7fb14ae00350] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14ae00350] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14ae00350] Xapian::docid OrPostList::get_docid(0) returned: 4
+M 1109     [0x7fb14ae003e0] PostList * AndNotPostList::advance_to_next_match(0, 0x0) returned: 0x0
+M 1109    [0x7fb14ae003e0] PostList * AndNotPostList::next(0) returned: 0x0
+M 1109    [0x7fb14ae003e0] bool AndNotPostList::at_end(0)
+M 1109    [0x7fb14ae003e0] bool AndNotPostList::at_end(0) returned: false
+M 1109    [0x7fb14ae003e0] double AndNotPostList::get_weight(0)
+M 1109     [0x7fb14c1000f0] double OrPostList::get_weight(0)
+M 1109      [0x7fb14c1001b0] double OrPostList::get_weight(0)
+M 1109      [0x7fb14c1001b0] double OrPostList::get_weight(0) returned: 0
+M 1109     [0x7fb14c1000f0] double OrPostList::get_weight(0) returned: 0
+M 1109    [0x7fb14ae003e0] double AndNotPostList::get_weight(0) returned: 0
+M 1109    [0x7fb14ae003e0] Xapian::docid AndNotPostList::get_docid(0)
+M 1109    [0x7fb14ae003e0] Xapian::docid AndNotPostList::get_docid(0) returned: 2
+M 1109    Candidate document id 2 wt 0
+M 1109    [0x7fb14ae003e0] PostList * AndNotPostList::next(0)
+M 1109     [0x7fb14c1000f0] PostList * OrPostList::next(0)
+M 1109      [0x7fb14c1001b0] PostList * OrPostList::next(0)
+D 1109       [0x7fb14ae00420] PostList * GlassPostList::next(0)
+D 1109        [0x7fb14ae00420] bool GlassPostList::next_in_chunk(0)
+D 1109        [0x7fb14ae00420] bool GlassPostList::next_in_chunk(0) returned: true
+D 1109        Moved to docid 4, wdf = 1
+D 1109       [0x7fb14ae00420] PostList * GlassPostList::next(0) returned: 0x0
+D 1109       [0x7fb14af00660] PostList * GlassPostList::next(0)
+D 1109        [0x7fb14af00660] bool GlassPostList::next_in_chunk(0)
+D 1109        [0x7fb14af00660] bool GlassPostList::next_in_chunk(0) returned: true
+D 1109        Moved to docid 8, wdf = 1
+D 1109       [0x7fb14af00660] PostList * GlassPostList::next(0) returned: 0x0
+M 1109      [0x7fb14c1001b0] PostList * OrPostList::next(0) returned: 0x0
+M 1109      [0x7fb14c1001b0] bool OrPostList::at_end(0)
+M 1109      [0x7fb14c1001b0] bool OrPostList::at_end(0) returned: false
+D 1109      [0x7fb14af00490] PostList * GlassPostList::next(0)
+D 1109       [0x7fb14af00490] bool GlassPostList::next_in_chunk(0)
+D 1109       [0x7fb14af00490] bool GlassPostList::next_in_chunk(0) returned: true
+D 1109       Moved to docid 6, wdf = 1
+D 1109      [0x7fb14af00490] PostList * GlassPostList::next(0) returned: 0x0
+M 1109      [0x7fb14c1001b0] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14c1001b0] Xapian::docid OrPostList::get_docid(0) returned: 4
+M 1109     [0x7fb14c1000f0] PostList * OrPostList::next(0) returned: 0x0
+M 1109     [0x7fb14ae003e0] PostList * AndNotPostList::advance_to_next_match(0, 0x0)
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0)
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0)
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0) returned: 4
+M 1109      [0x7fb14c1000f0] PostList * OrPostList::next(0)
+M 1109       [0x7fb14c1001b0] PostList * OrPostList::next(0)
+D 1109        [0x7fb14ae00420] PostList * GlassPostList::next(0)
+D 1109         [0x7fb14ae00420] bool GlassPostList::next_in_chunk(0)
+D 1109         [0x7fb14ae00420] bool GlassPostList::next_in_chunk(0) returned: true
+D 1109         Moved to docid 8, wdf = 1
+D 1109        [0x7fb14ae00420] PostList * GlassPostList::next(0) returned: 0x0
+M 1109       [0x7fb14c1001b0] PostList * OrPostList::next(0) returned: 0x0
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0)
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0) returned: false
+M 1109       [0x7fb14c1001b0] Xapian::docid OrPostList::get_docid(0)
+M 1109       [0x7fb14c1001b0] Xapian::docid OrPostList::get_docid(0) returned: 8
+M 1109      [0x7fb14c1000f0] PostList * OrPostList::next(0) returned: 0x0
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0)
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0)
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0) returned: 6
+M 1109      [0x7fb14ae00350] PostList * OrPostList::skip_to(6, 0)
+D 1109       [0x7fb14c100650] PostList * GlassPostList::skip_to(6, 0)
+D 1109        [0x7fb14c100650] bool GlassPostList::current_chunk_contains(6)
+D 1109        [0x7fb14c100650] bool GlassPostList::current_chunk_contains(6) returned: true
+D 1109        [0x7fb14c100650] bool GlassPostList::move_forward_in_chunk_to_at_least(6)
+D 1109        [0x7fb14c100650] bool GlassPostList::move_forward_in_chunk_to_at_least(6) returned: true
+D 1109        Skipped to docid 10, wdf = 1
+D 1109       [0x7fb14c100650] PostList * GlassPostList::skip_to(6, 0) returned: 0x0
+M 1109      [0x7fb14ae00350] PostList * OrPostList::skip_to(6, 0) returned: 0x0
+M 1109      [0x7fb14ae00350] bool OrPostList::at_end(0)
+M 1109      [0x7fb14ae00350] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14ae00350] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14ae00350] Xapian::docid OrPostList::get_docid(0) returned: 6
+M 1109      [0x7fb14c1000f0] PostList * OrPostList::next(0)
+D 1109       [0x7fb14af00490] PostList * GlassPostList::next(0)
+D 1109        [0x7fb14af00490] bool GlassPostList::next_in_chunk(0)
+D 1109        [0x7fb14af00490] bool GlassPostList::next_in_chunk(0) returned: true
+D 1109        Moved to docid 8, wdf = 1
+D 1109       [0x7fb14af00490] PostList * GlassPostList::next(0) returned: 0x0
+M 1109       [0x7fb14c1001b0] Xapian::docid OrPostList::get_docid(0)
+M 1109       [0x7fb14c1001b0] Xapian::docid OrPostList::get_docid(0) returned: 8
+M 1109      [0x7fb14c1000f0] PostList * OrPostList::next(0) returned: 0x0
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0)
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0)
+M 1109       [0x7fb14c1001b0] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0) returned: 8
+M 1109      [0x7fb14ae00350] PostList * OrPostList::skip_to(8, 0)
+D 1109       [0x7fb14c100550] PostList * GlassPostList::skip_to(8, 0)
+D 1109        [0x7fb14c100550] bool GlassPostList::current_chunk_contains(8)
+D 1109        [0x7fb14c100550] bool GlassPostList::current_chunk_contains(8) returned: true
+D 1109        [0x7fb14c100550] bool GlassPostList::move_forward_in_chunk_to_at_least(8)
+D 1109        [0x7fb14c100550] bool GlassPostList::move_forward_in_chunk_to_at_least(8) returned: true
+D 1109        Skipped to docid 12, wdf = 1
+D 1109       [0x7fb14c100550] PostList * GlassPostList::skip_to(8, 0) returned: 0x0
+M 1109      [0x7fb14ae00350] PostList * OrPostList::skip_to(8, 0) returned: 0x0
+M 1109      [0x7fb14ae00350] bool OrPostList::at_end(0)
+M 1109      [0x7fb14ae00350] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14ae00350] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14ae00350] Xapian::docid OrPostList::get_docid(0) returned: 10
+M 1109     [0x7fb14ae003e0] PostList * AndNotPostList::advance_to_next_match(0, 0x0) returned: 0x0
+M 1109    [0x7fb14ae003e0] PostList * AndNotPostList::next(0) returned: 0x0
+M 1109    [0x7fb14ae003e0] bool AndNotPostList::at_end(0)
+M 1109    [0x7fb14ae003e0] bool AndNotPostList::at_end(0) returned: false
+M 1109    [0x7fb14ae003e0] double AndNotPostList::get_weight(0)
+M 1109     [0x7fb14c1000f0] double OrPostList::get_weight(0)
+M 1109      [0x7fb14c1001b0] double OrPostList::get_weight(0)
+M 1109      [0x7fb14c1001b0] double OrPostList::get_weight(0) returned: 0
+M 1109     [0x7fb14c1000f0] double OrPostList::get_weight(0) returned: 0
+M 1109    [0x7fb14ae003e0] double AndNotPostList::get_weight(0) returned: 0
+M 1109    [0x7fb14ae003e0] Xapian::docid AndNotPostList::get_docid(0)
+M 1109    [0x7fb14ae003e0] Xapian::docid AndNotPostList::get_docid(0) returned: 8
+M 1109    Candidate document id 8 wt 0
+M 1109    [0x7fb14ae003e0] PostList * AndNotPostList::next(0)
+M 1109     [0x7fb14c1000f0] PostList * OrPostList::next(0)
+M 1109      [0x7fb14c1001b0] PostList * OrPostList::next(0)
+D 1109       [0x7fb14ae00420] PostList * GlassPostList::next(0)
+D 1109        [0x7fb14ae00420] bool GlassPostList::next_in_chunk(0)
+D 1109        [0x7fb14ae00420] bool GlassPostList::next_in_chunk(0) returned: true
+D 1109        Moved to docid 10, wdf = 1
+D 1109       [0x7fb14ae00420] PostList * GlassPostList::next(0) returned: 0x0
+D 1109       [0x7fb14af00660] PostList * GlassPostList::next(0)
+D 1109        [0x7fb14af00660] bool GlassPostList::next_in_chunk(0)
+D 1109        [0x7fb14af00660] bool GlassPostList::next_in_chunk(0) returned: false
+D 1109        [0x7fb14af00660] void GlassPostList::next_chunk(0)
+D 1109        [0x7fb14af00660] void GlassPostList::next_chunk(0) returned
+D 1109        Moved to end
+D 1109       [0x7fb14af00660] PostList * GlassPostList::next(0) returned: 0x0
+M 1109      [0x7fb14c1001b0] PostList * OrPostList::next(0) returned: 0x7fb14ae00420
+D 1109      [0x7fb14af00660] GlassPostList::~GlassPostList()
+D 1109      [0x7fb14af00660] GlassPostList::~GlassPostList() returned
+D 1109      [0x7fb14af00490] PostList * GlassPostList::next(0)
+D 1109       [0x7fb14af00490] bool GlassPostList::next_in_chunk(0)
+D 1109       [0x7fb14af00490] bool GlassPostList::next_in_chunk(0) returned: true
+D 1109       Moved to docid 12, wdf = 1
+D 1109      [0x7fb14af00490] PostList * GlassPostList::next(0) returned: 0x0
+M 1109     [0x7fb14c1000f0] PostList * OrPostList::next(0) returned: 0x0
+M 1109     [0x7fb14ae003e0] PostList * AndNotPostList::advance_to_next_match(0, 0x0)
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0)
+M 1109      [0x7fb14c1000f0] bool OrPostList::at_end(0) returned: false
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0)
+M 1109      [0x7fb14c1000f0] Xapian::docid OrPostList::get_docid(0) returned: 10
+M 1109      [0x7fb14c1000f0] PostList * OrPostList::next(0)
+D 1109       [0x7fb14ae00420] PostList * GlassPostList::next(0)
+D 1109        [0x7fb14ae00420] bool GlassPostList::next_in_chunk(0)
+D 1109        [0x7fb14ae00420] bool GlassPostList::next_in_chunk(0) returned: false
+D 1109        [0x7fb14ae00420] void GlassPostList::next_chunk(0)
+D 1109        [0x7fb14ae00420] void GlassPostList::next_chunk(0) returned
+D 1109        Moved to end
+D 1109       [0x7fb14ae00420] PostList * GlassPostList::next(0) returned: 0x0
+M 1109      [0x7fb14c1000f0] PostList * OrPostList::next(0) returned: 0x7fb14af00490
+D 1109      [0x7fb14ae00420] GlassPostList::~GlassPostList()
+D 1109      [0x7fb14ae00420] GlassPostList::~GlassPostList() returned
+M 1109      [0x7fb14ae00350] PostList * OrPostList::skip_to(12, 0)
+D 1109       [0x7fb14c100650] PostList * GlassPostList::skip_to(12, 0)
+D 1109        [0x7fb14c100650] bool GlassPostList::current_chunk_contains(12)
+D 1109        [0x7fb14c100650] bool GlassPostList::current_chunk_contains(12) returned: false
+D 1109        [0x7fb14c100650] void GlassPostList::move_to_chunk_containing(12)
+D 1109         [0x7fb14c100390] bool GlassCursor::find_entry("virtual\000\000\f")
+D 1109          [0x7fb14b001358] void GlassTable::form_key("virtual\000\000\f")
+D 1109          [0x7fb14b001358] void GlassTable::form_key("virtual\000\000\f") returned
+D 1109          [0x7fb14b001358] bool GlassTable::find(0x7fb14c1003f8)
+D 1109           [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 123, bool&)
+D 1109           [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 123, bool&) returned: 121
+D 1109          [0x7fb14b001358] bool GlassTable::find(0x7fb14c1003f8) returned: false
+D 1109          Found entry: key=\x76\x69\x72\x74\x75\x61\x6c
+D 1109         [0x7fb14c100390] bool GlassCursor::find_entry("virtual\000\000\f") returned: false
+D 1109         [0x7fb14c100390] bool GlassCursor::read_tag(false)
+D 1109          [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109          [0x7fb14b001358] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109          [0x7fb14b001358] bool GlassTable::next_default(C_, 0)
+D 1109          [0x7fb14b001358] bool GlassTable::next_default(C_, 0) returned: true
+D 1109          tag=\x02\x02\x03\x31\x06\x01\x05\x01
+D 1109         [0x7fb14c100390] bool GlassCursor::read_tag(false) returned: false
+D 1109         [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14c100728, (void*)0x7fb14c1003d9, 0x7fb14c100740, 0x0)
+D 1109          *number_of_entries_ptr = 2
+D 1109          did = 4
+D 1109         [0x0] Xapian::docid read_start_of_first_chunk((void*)0x7fb14c100728, (void*)0x7fb14c1003d9, 0x7fb14c100740, 0x0) returned: 4
+D 1109         [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14c100728, (void*)0x7fb14c1003d9, 4, (void*)0x7fb14c100711)
+D 1109          *is_last_chunk_ptr = 1
+D 1109          last_did_in_chunk = 10
+D 1109         [0x0] Xapian::docid read_start_of_chunk((void*)0x7fb14c100728, (void*)0x7fb14c1003d9, 4, (void*)0x7fb14c100711) returned: 10
+D 1109         [0x7fb14c100650] void GlassPostList::next_chunk(0)
+D 1109         [0x7fb14c100650] void GlassPostList::next_chunk(0) returned
+D 1109        [0x7fb14c100650] void GlassPostList::move_to_chunk_containing(12) returned
+D 1109       [0x7fb14c100650] PostList * GlassPostList::skip_to(12, 0) returned: 0x0
+M 1109      [0x7fb14ae00350] PostList * OrPostList::skip_to(12, 0) returned: 0x7fb14c100550
+D 1109      [0x7fb14c100650] GlassPostList::~GlassPostList()
+D 1109      [0x7fb14c100650] GlassPostList::~GlassPostList() returned
+D 1109      [0x7fb14af00490] PostList * GlassPostList::next(0)
+D 1109       [0x7fb14af00490] bool GlassPostList::next_in_chunk(0)
+D 1109       [0x7fb14af00490] bool GlassPostList::next_in_chunk(0) returned: false
+D 1109       [0x7fb14af00490] void GlassPostList::next_chunk(0)
+D 1109       [0x7fb14af00490] void GlassPostList::next_chunk(0) returned
+D 1109       Moved to end
+D 1109      [0x7fb14af00490] PostList * GlassPostList::next(0) returned: 0x0
+M 1109     [0x7fb14ae003e0] PostList * AndNotPostList::advance_to_next_match(0, 0x0) returned: 0x0
+M 1109    [0x7fb14ae003e0] PostList * AndNotPostList::next(0) returned: 0x0
+M 1109    [0x7fb14ae003e0] bool AndNotPostList::at_end(0)
+M 1109    [0x7fb14ae003e0] bool AndNotPostList::at_end(0) returned: true
+M 1109    Reached end of potential matches
+D 1109    [0x7fb14af00490] GlassPostList::~GlassPostList()
+D 1109    [0x7fb14af00490] GlassPostList::~GlassPostList() returned
+D 1109    [0x7fb14c100550] GlassPostList::~GlassPostList()
+D 1109    [0x7fb14c100550] GlassPostList::~GlassPostList() returned
+M 1109    docs_matched = 2, definite_matches_not_seen = 0, matches_lower_bound = 0, matches_estimated = 5, matches_upper_bound = 10
+M 1109    items.size() = 2, max_msize = 10, setting bounds equal
+M 1109    2 items in potential mset
+M 1109    sorting 2 entries
+M 1109    min weight in mset = 0
+M 1109    max weight in mset = 0
+A 1109    [0x7ffee0587728] Database::~Database()
+A 1109    [0x7ffee0587728] Database::~Database() returned
+M 1109   [0x7ffee0587bd0] void MultiMatch::get_mset(0, 10, 10, mset, Weight::Internal(totlen=156, collection_size=12, rset_size=0, total_term_count=1872, subdbs=1, finalised=0, termfreqs={Wikipedia => TermFreqs(termfreq=0, reltermfreq=0, collfreq=0, max_part=0), about => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), discussions => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), questions => TermFreqs(termfreq=4, reltermfreq=0, collfreq=4, max_part=0), using => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0), virtual => TermFreqs(termfreq=2, reltermfreq=0, collfreq=2, max_part=0)}), mdecider, sorter) returned
+M 1109  [0x7fb14ac02730] MSet Enquire::Internal::get_mset(0, 10, 0, NULL, NULL) returned: Xapian::MSet(Xapian::MSet::Internal(firstitem=0, matches_lower_bound=2, matches_estimated=2, matches_upper_bound=2, max_possible=0, max_attained=0, Xapian::MSetItem(2, 0, ), Xapian::MSetItem(8, 0, )))
+A 1109  [0x7ffee0587be8] Database::~Database()
+A 1109  [0x7ffee0587be8] Database::~Database() returned
+A 1109 [0x7ffee0588388] Xapian::MSet Xapian::Enquire::get_mset(0, 10, 0, NULL, NULL) returned: Xapian::MSet(Xapian::MSet::Internal(firstitem=0, matches_lower_bound=2, matches_estimated=2, matches_upper_bound=2, max_possible=0, max_attained=0, Xapian::MSetItem(2, 0, ), Xapian::MSetItem(8, 0, )))
+2 results found
+M 1109 [0x7fb14c200410] Document Xapian::MSet::Internal::get_doc_by_index(0)
+D 1109  [0x7fb14b001000] Xapian::Document::Internal * GlassDatabase::open_document(2, true)
+D 1109  [0x7fb14b001000] Xapian::Document::Internal * GlassDatabase::open_document(2, true) returned: 0x7fb14ac02b80
+M 1109 [0x7fb14c200410] Document Xapian::MSet::Internal::get_doc_by_index(0) returned: Document(db:yes)
+A 1109 [0x7ffee0588280] string Document::get_value(1)
+D 1109  [0x7fb14ac02b80] string GlassDocument::do_get_value(1)
+D 1109   [0x7fb14b001858] Xapian::docid GlassValueManager::get_chunk_containing_did(1, 2, "")
+D 1109    [0x7fb14b001358] GlassCursor * GlassTable::cursor_get(0)
+D 1109    [0x7fb14b001358] GlassCursor * GlassTable::cursor_get(0) returned: 0x7fb14c2004d0
+D 1109    [0x7fb14c2004d0] bool GlassCursor::find_entry("\000\330\001\000\002")
+D 1109     [0x7fb14b001358] void GlassTable::form_key("\000\330\001\000\002")
+D 1109     [0x7fb14b001358] void GlassTable::form_key("\000\330\001\000\002") returned
+D 1109     [0x7fb14b001358] bool GlassTable::find(0x7fb14c2000b8)
+D 1109      [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&)
+D 1109      [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, -1, bool&) returned: 11
+D 1109     [0x7fb14b001358] bool GlassTable::find(0x7fb14c2000b8) returned: false
+D 1109     Found entry: key=
+D 1109    [0x7fb14c2004d0] bool GlassCursor::find_entry("\000\330\001\000\002") returned: false
+D 1109   [0x7fb14b001858] Xapian::docid GlassValueManager::get_chunk_containing_did(1, 2, "") returned: 0
+D 1109  [0x7fb14ac02b80] string GlassDocument::do_get_value(1) returned: std::string&
+A 1109 [0x7ffee0588280] string Document::get_value(1) returned: std::string&
+A 1109 [0x7ffee0588280] string Document::get_data(0)
+D 1109  [0x7fb14ac02b80] string Xapian::Document::Internal::get_data(0)
+D 1109   [0x7fb14ac02b80] string GlassDocument::do_get_data(0)
+D 1109    [0x7fb14b001c98] bool GlassTable::get_exact_entry("\000\002", "")
+D 1109     [0x7fb14b001c98] void GlassTable::form_key("\000\002")
+D 1109     [0x7fb14b001c98] void GlassTable::form_key("\000\002") returned
+D 1109     [0x7fb14b001c98] bool GlassTable::find(0x7fb14b001d58)
+D 1109      [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b004008, (void*)0x7fb14b002000, -1, bool&)
+D 1109      [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b004008, (void*)0x7fb14b002000, -1, bool&) returned: 15
+D 1109     [0x7fb14b001c98] bool GlassTable::find(0x7fb14b001d58) returned: true
+D 1109     [0x7fb14b001c98] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109     [0x7fb14b001c98] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109    [0x7fb14b001c98] bool GlassTable::get_exact_entry("\000\002", "") returned: true
+D 1109   [0x7fb14ac02b80] string GlassDocument::do_get_data(0) returned: std::string&
+D 1109  [0x7fb14ac02b80] string Xapian::Document::Internal::get_data(0) returned: std::string&
+A 1109 [0x7ffee0588280] string Document::get_data(0) returned: std::string&
+0: docid , data Help desk – Ask questions about using Wikipedia.
+M 1109 [0x7fb14c200410] Document Xapian::MSet::Internal::get_doc_by_index(1)
+D 1109  [0x7fb14b001000] Xapian::Document::Internal * GlassDatabase::open_document(8, true)
+D 1109  [0x7fb14b001000] Xapian::Document::Internal * GlassDatabase::open_document(8, true) returned: 0x7fb14c200590
+M 1109 [0x7fb14c200410] Document Xapian::MSet::Internal::get_doc_by_index(1) returned: Document(db:yes)
+A 1109 [0x7ffee0588280] string Document::get_value(1)
+D 1109  [0x7fb14c200590] string GlassDocument::do_get_value(1)
+D 1109   [0x7fb14b001858] Xapian::docid GlassValueManager::get_chunk_containing_did(1, 8, "")
+D 1109    [0x7fb14c2004d0] bool GlassCursor::find_entry("\000\330\001\000\b")
+D 1109     [0x7fb14b001358] void GlassTable::form_key("\000\330\001\000\b")
+D 1109     [0x7fb14b001358] void GlassTable::form_key("\000\330\001\000\b") returned
+D 1109     [0x7fb14b001358] bool GlassTable::find(0x7fb14c2000b8)
+D 1109      [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 11, bool&)
+D 1109      [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b80a408, (void*)0x7fb14b808400, 11, bool&) returned: 11
+D 1109     [0x7fb14b001358] bool GlassTable::find(0x7fb14c2000b8) returned: false
+D 1109     Found entry: key=
+D 1109    [0x7fb14c2004d0] bool GlassCursor::find_entry("\000\330\001\000\b") returned: false
+D 1109   [0x7fb14b001858] Xapian::docid GlassValueManager::get_chunk_containing_did(1, 8, "") returned: 0
+D 1109  [0x7fb14c200590] string GlassDocument::do_get_value(1) returned: std::string&
+A 1109 [0x7ffee0588280] string Document::get_value(1) returned: std::string&
+A 1109 [0x7ffee0588280] string Document::get_data(0)
+D 1109  [0x7fb14c200590] string Xapian::Document::Internal::get_data(0)
+D 1109   [0x7fb14c200590] string GlassDocument::do_get_data(0)
+D 1109    [0x7fb14b001c98] bool GlassTable::get_exact_entry("\000\b", "")
+D 1109     [0x7fb14b001c98] void GlassTable::form_key("\000\b")
+D 1109     [0x7fb14b001c98] void GlassTable::form_key("\000\b") returned
+D 1109     [0x7fb14b001c98] bool GlassTable::find(0x7fb14b001d58)
+D 1109      [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b004008, (void*)0x7fb14b002000, 15, bool&)
+D 1109      [0x0] int GlassTable::find_in_leaf((void*)0x7fb14b004008, (void*)0x7fb14b002000, 15, bool&) returned: 27
+D 1109     [0x7fb14b001c98] bool GlassTable::find(0x7fb14b001d58) returned: true
+D 1109     [0x7fb14b001c98] bool GlassTable::read_tag(C_, std::string*, false)
+D 1109     [0x7fb14b001c98] bool GlassTable::read_tag(C_, std::string*, false) returned: false
+D 1109    [0x7fb14b001c98] bool GlassTable::get_exact_entry("\000\b", "") returned: true
+D 1109   [0x7fb14c200590] string GlassDocument::do_get_data(0) returned: std::string&
+D 1109  [0x7fb14c200590] string Xapian::Document::Internal::get_data(0) returned: std::string&
+A 1109 [0x7ffee0588280] string Document::get_data(0) returned: std::string&
+1: docid , data Help desk – Ask questions about using Wikipedia.
+A 1109 [0x7fb14ac02a88] Database::~Database()
+A 1109 [0x7fb14ac02a88] Database::~Database() returned
+A 1109 [0x7ffee0588388] Enquire::~Enquire()
+A 1109 [0x7ffee0588388] Enquire::~Enquire() returned
+A 1109 [0x7fb14ac02738] Database::~Database()
+A 1109 [0x7fb14ac02738] Database::~Database() returned
+A 1109 [0x7ffee05883a8] Database::~Database()
+A 1109 [0x7ffee05883a8] Database::~Database() returned
+D 1109 [0x7fb14b001000] GlassDatabase::~GlassDatabase()
+D 1109 [0x7fb14b001000] GlassDatabase::~GlassDatabase() returned
+D 1109 [0x7fb14b001c98] GlassTable::~GlassTable()
+D 1109  [0x7fb14b001c98] void GlassTable::close(false)
+D 1109  [0x7fb14b001c98] void GlassTable::close(false) returned
+D 1109 [0x7fb14b001c98] GlassTable::~GlassTable() returned
+D 1109 [0x7fb14b001ab8] GlassTable::~GlassTable()
+D 1109  [0x7fb14b001ab8] void GlassTable::close(false)
+D 1109  [0x7fb14b001ab8] void GlassTable::close(false) returned
+D 1109 [0x7fb14b001ab8] GlassTable::~GlassTable() returned
+D 1109 [0x7fb14b0018e0] GlassTable::~GlassTable()
+D 1109  [0x7fb14b0018e0] void GlassTable::close(false)
+D 1109  [0x7fb14b0018e0] void GlassTable::close(false) returned
+D 1109 [0x7fb14b0018e0] GlassTable::~GlassTable() returned
+D 1109 [0x7fb14b0016b0] GlassTable::~GlassTable()
+D 1109  [0x7fb14b0016b0] void GlassTable::close(false)
+D 1109  [0x7fb14b0016b0] void GlassTable::close(false) returned
+D 1109 [0x7fb14b0016b0] GlassTable::~GlassTable() returned
+D 1109 [0x7fb14b001508] GlassTable::~GlassTable()
+D 1109  [0x7fb14b001508] void GlassTable::close(false)
+D 1109  [0x7fb14b001508] void GlassTable::close(false) returned
+D 1109 [0x7fb14b001508] GlassTable::~GlassTable() returned
+D 1109 [0x7fb14b001358] GlassTable::~GlassTable()
+D 1109  [0x7fb14b001358] void GlassTable::close(false)
+D 1109  [0x7fb14b001358] void GlassTable::close(false) returned
+D 1109 [0x7fb14b001358] GlassTable::~GlassTable() returned
+_ 1109 xapian-core 1.4.5: debug log ended
